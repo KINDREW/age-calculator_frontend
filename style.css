@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(0, 0%, 94%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: hsl(0, 0%, 100%);
+  width: 500px;
+  height: 450px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 150px;
+}
+
+.input-flex {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid hsl(0, 0%, 86%);
+  position: relative;
+  padding-bottom: 50px;
+  /* background: red; */
+  width: 80%;
+  height: 40%;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-left: 30px;
+  width: 120px;
+}
+
+input {
+  padding: 10px 10px;
+  width: 110px;
+  text-align: center;
+  border: 2px solid hsl(0, 0%, 86%);
+  color: hsl(0, 0%, 8%);
+  font-size: 32px;
+  font-family: "Poppins";
+}
+
+button {
+  height: 70px;
+  width: 70px;
+  border-radius: 70px;
+  border: none;
+  background: hsl(259, 100%, 65%);
+  position: absolute;
+  left: 95%;
+  top: 76%;
+  cursor: pointer;
+}
+
+small {
+  color: hsl(0, 100%, 67%);
+}
+
+.output {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 30px;
+  margin-top: -20px;
+  height: 70%;
+}
+
+h1 {
+  font-style: italic;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  font-size: 50px;
+}
+
+.output-year,
+.output-month,
+.output-day {
+  color: hsl(259, 100%, 65%);
+}
+
+span {
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  color: hsl(0, 1%, 44%);
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .input-flex {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .input-container {
+    margin: 0;
+    padding: 0;
+  }
+
+  button {
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    margin-top: 30px;
+    left: 40%;
+    top: 70%;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  input {
+    width: 100px;
+    font-size: 28px;
+  }
+}
