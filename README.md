@@ -18,3 +18,6 @@ Users should be able to:
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 - **Bonus**: See the age numbers animate to their final number when the form is submitted
+
+
+The challenge is completed and hosted live https://age-calculator-frontend.vercel.app/
